@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Debouncing</title>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h4>
-      Open the console and click the button continuously, you will see the
-      difference
-    </h4>
-    <button onclick="starter()">Button</button>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="number"
+          value=""
+          id="delay-entry"
+          placeholder="Delay Time"
+        />
+        <input type="text" id="search" placeholder="Enter Text" />
+        <h2 id="fetching-api">Fetching Data : 0</h2>
+      </form>
+
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+
+      <script src="main.js"></script>
+    </div>
   </body>
 </html>
