@@ -16,6 +16,10 @@ html {
   margin-top: 150px;
 }
 
+.container h2 {
+  font-family: sans-serif;
+}
+
 input[type="number"],
 input[type="text"] {
   width: 100%;
