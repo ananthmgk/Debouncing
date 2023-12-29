@@ -17,6 +17,7 @@ function toggleBtn() {
     throttleSearch.value = "";
   }
   count = 0;
+  fetchSearch.innerText = `Fetching Data : ${count}`;
 }
 
 const countFunc = () => {
