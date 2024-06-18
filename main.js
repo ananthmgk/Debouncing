@@ -5,24 +5,24 @@ const title = document.querySelector(".title");
 let count = 0;
 
 function toggleBtn() {
-  if (title.innerText === "11Debouncing") {
-    title.innerText = "11Throttling";
+  if (title.innerText === "Debouncing") {
+    title.innerText = "Throttling";
     throttleSearch.style.display = "block";
     debounceSearch.style.display = "none";
     debounceSearch.value = "";
   } else {
-    title.innerText = "11Debouncing";
+    title.innerText = "Debouncing";
     throttleSearch.style.display = "none";
     debounceSearch.style.display = "block";
     throttleSearch.value = "";
   }
   count = 0;
-  fetchSearch.innerText = `Fetching Oata : ${count}`;
+  fetchSearch.innerText = `Fetching Data : ${count}`;
 }
 
 const countFunc = () => {
   count += 1;
-  fetchSearch.innerText = `Fetching Oata : ${count}`;
+  fetchSearch.innerText = `Fetching Data : ${count}`;
 };
 
 function debounceing(func) {
