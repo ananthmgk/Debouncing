@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing and Throttling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="number"
+          value=""
+          id="delay-entry"
+          placeholder="Delay Time"
+        />
+        <input type="text" class="debounce-search" placeholder="Enter Text" />
+        <input type="text" class="throttle-search" placeholder="Enter Text" />
+        <h2 class="fetching-api">Fetching Data : 0</h2>
+      </form>
+
+      <label class="switch">
+        <input type="checkbox" onclick="toggleBtn()" />
+        <span class="slider round"></span>
+        <h2 class="title">Debouncing</h2>
+      </label>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
